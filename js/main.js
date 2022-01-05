@@ -6,10 +6,10 @@ let check = false; //WERYFIKACJA / VERYFICATION
 //USTAWIENIE LIMITU NA DZIEJSZY DZIEN W DATE-INPUT / SETTING LIMIT FOR TODAY'S DATE
 
 const dateMax = () => {
-    const today = new Date(); //Dzisiejsza Data/ TODAY'S DATE
-    const dd = today.getDate();//Dzień / DAY
-    const mm = today.getMonth() + 1;//Miesiąc Styczeń posiada wartość 0 dlatego zwiększamy to o 1; / MOUNTH, Jenuary normaly has value = 0, so increase that by 1
-    const yyyy = today.getFullYear();//Rok / YEAR
+    let today = new Date(); //Dzisiejsza Data/ TODAY'S DATE
+    let dd = today.getDate();//Dzień / DAY
+    let mm = today.getMonth() + 1;//Miesiąc Styczeń posiada wartość 0 dlatego zwiększamy to o 1; / MOUNTH, Jenuary normaly has value = 0, so increase that by 1
+    let yyyy = today.getFullYear();//Rok / YEAR
 
     if (dd < 10) {
     dd = '0' + dd; //DODANIE ZERA PRZED CYFRY 1-9 / ADDING 0 BEFORE NUMBERS 1-9
