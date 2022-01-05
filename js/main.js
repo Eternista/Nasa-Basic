@@ -94,3 +94,9 @@ const nasaLoad = function () {
   }
   
   document.querySelector(".loadPhotos").addEventListener("click", nasaLoad);
+  document.querySelector("body").addEventListener("keypress", (e) => {
+    if(e.key === 'Enter') {
+        nasaLoad();
+    }  
+}
+);
