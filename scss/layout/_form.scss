@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    label {
+        max-width: 300px;
+        width: 100%;
+        display: block;
+        strong {
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        margin-right: 20px;
+    }
+    @include mobile {
+        display: block;
+        label {
+            margin: 0 auto 20px;
+        }
+        button {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

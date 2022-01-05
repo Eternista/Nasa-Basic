@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/png">
+    <title>Nasa</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- LIGHTGALERY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/css/lg-zoom.min.css" integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/css/lg-thumbnail.min.css" integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/css/lightgallery.min.css"
+    />
+    <!-- LIGHTGALERY END -->
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP END -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="https://api.nasa.gov" target="_blank" class="logo">
+            <img src="images/NASA_Wormball_logo.svg" alt="">
+        </a>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 form">
+                    <label for="dateInp">
+                        <strong>Select date:</strong>
+                        <input id="dateInp" value="2022-01-05" type="date">
+                    </label>
+                    <label for="numberInp">
+                        <strong>Number of images</strong>
+                         <input type="number" id="numberInp" value="1" placeholder="1" min="1" max="50">
+                    </label>
+                    <button class="loadPhotos btn btn-primary" type="submit">Submit</button>
+                </div>
+                <div class="col-12" id="gallery">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <!-- LIGHTGALERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/plugins/zoom/lg-zoom.min.js" integrity="sha512-UZbEchOpPFjh+sg/r2ly17+8K6uTlye0Dfox3+GOHjNguTxeOGKuKYeE/hNSdSbZ4+Uq0RHpfbK+QeaJw7eXRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0-beta.0/lightgallery.min.js" integrity="sha512-0JtOysnU+g+PMlwAGKzc0vFjiDb0p9/OhzFib1lbuHn6BCdO+RSyxDN53UndKL8pNjlDhD0PIEsoVwl0i8W4lQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- LIGHTGALERY END -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

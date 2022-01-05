@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #999;
+  font-size: 15px;
+  line-height: 1.80857;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html.hide {
+  overflow: hidden;
+}
+
+strong {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section {
+  padding: 40px 20px 80px;
+}
+
+@media all and (max-width: 991px) {
+  section {
+    padding: 30px 20px 60px;
+  }
+}
+
+@media all and (max-width: 798px) {
+  section {
+    padding: 20px 20px 40px;
+  }
+}
+
+input, textarea {
+  font-size: 16px;
+  padding: 5px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+header a {
+  display: block;
+  font-size: 1px;
+  line-height: 1;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header a img {
+  width: 128px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.form label {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin-right: 20px;
+}
+
+.form label strong {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.form label input {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 798px) {
+  .form {
+    display: block;
+  }
+  .form label {
+    margin: 0 auto 20px;
+  }
+  .form button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+@media all and (max-width: 991px) {
+  #gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 798px) {
+  #gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#gallery .single-image {
+  border: 1px solid #ccc;
+  width: 100%;
+  display: block;
+}
+
+#gallery .single-image img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#gallery .single-image__text {
+  padding: 5px;
+}
+
+#gallery .single-image__text * {
+  display: block;
+  text-align: center;
+}
+
+#gallery .single-image__text strong {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
