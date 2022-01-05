@@ -1,17 +1,14 @@
 #gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    @include tablet {
-        grid-template-columns: 1fr 1fr;
-    }
-    @include mobile {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
     justify-content: center;
     gap: 20px;
+    
     .single-image {
         border: 1px solid #ccc;
-        width: 100%;
+        width: calc((100% - 60px)/4);
+        @include tablet {
+            width: calc((100% - 20px)/2);
+        }
         display: block;
         img {
             width: 100%;
@@ -28,6 +25,15 @@
             strong {
                 font-weight: bold;
             }
+        }
+    }
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        .single-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
         }
     }
 }
